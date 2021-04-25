@@ -5,8 +5,6 @@
  */
 package javaapplication14;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Windows 10
@@ -60,13 +58,9 @@ public class Task1 {
     }
     
     
-    public static void main(String[] args)    {
-        Scanner cin = new Scanner(System.in);
-        System.out.println("Enter String : ");
-        String s = cin.nextLine();
-        
-        System.out.println("Number of Words : "+wordCounter(s));
-        System.out.println("Number of vowels : "+vowelcounter(s));
-        System.out.println("Number of puncuations : "+puncCount(s));
+    public static void main(String[] args) {
+        System.out.println(wordCounter("        Nabeel i goo bo an kow eyeryt hing           "));
+        System.out.println(vowelcounter("Maybe a story will cheer you up: Once upon a time, there was an ugly barnacle. It was so ugly,that everyone died. The end."));
+        System.out.println(puncCount("Maybe a story will cheer you up: Once upon a time, there was an ugly barnacle. It was so ugly,that everyone died. The end."));
     }
 }
