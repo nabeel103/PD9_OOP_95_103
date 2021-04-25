@@ -69,7 +69,9 @@ public class Task1 {
     }
     
 
-    public static void main(String[] args)    {
+    
+    public static void main(String[] args) {
+
         Scanner cin = new Scanner(System.in);
         System.out.println("Enter String : ");
         String s = cin.nextLine();
@@ -77,6 +79,7 @@ public class Task1 {
         System.out.println("Number of Words : "+wordCounter(s));
         System.out.println("Number of vowels : "+vowelcounter(s));
         System.out.println("Number of puncuations : "+puncCount(s));
+
         if (findSubString(s, "the")) {
             System.out.println("\"the\" is the part of the string");
         }
@@ -84,6 +87,8 @@ public class Task1 {
             System.out.println("\"the\" is the not a part of the string");
         }
         
+
+     
     }
 
 }
