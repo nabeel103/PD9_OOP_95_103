@@ -68,5 +68,7 @@ public class Task1 {
         System.out.println("Number of Words : "+wordCounter(s));
         System.out.println("Number of vowels : "+vowelcounter(s));
         System.out.println("Number of puncuations : "+puncCount(s));
-    }
+        
+        System.out.println("Task 1 End")
+;    }
 }
