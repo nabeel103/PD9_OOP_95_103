@@ -58,7 +58,15 @@ public class Task1 {
         }
       return count;  
     }
-    
+    static boolean findSubString(String s, String sub)
+    {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i)==sub.charAt(0) && s.charAt(i+1)==sub.charAt(1) && s.charAt(i+2)==sub.charAt(2) && s.charAt(i)==' ') {
+                return true;
+            }
+        }
+        return false;
+    }
     
 
     public static void main(String[] args)    {
@@ -69,8 +77,13 @@ public class Task1 {
         System.out.println("Number of Words : "+wordCounter(s));
         System.out.println("Number of vowels : "+vowelcounter(s));
         System.out.println("Number of puncuations : "+puncCount(s));
+        if (findSubString(s, "the")) {
+            System.out.println("\"the\" is the part of the string");
+        }
+        else{
+            System.out.println("\"the\" is the not a part of the string");
+        }
         
-        System.out.println("Task 1 End");
     }
 
 }
